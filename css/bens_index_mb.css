@@ -1,0 +1,375 @@
+html{
+    font-size: 10vw;
+}
+body{
+    font-size: 2.4vw;
+}
+/* 헤더 */
+.hdrWrap header{
+    height: 1rem;
+    max-height: 40px;
+}
+.hdrWrap .logo{
+    height: min(1.25rem,50px);
+    max-height: 50px;
+}
+.hdrWrap h1{
+    font-size: min(3.5em,35px);
+    line-height: min(1.25rem,50px);
+}
+.hdrWrap .btn{
+    width: 30px;
+    height: 0.75rem;
+    max-height: 30px;
+    margin-top: 10px;
+}
+.hdrWrap .btn:nth-child(1){
+    margin-right: 10px;
+}
+/* 메인 */
+.mainWrap{
+    height: 13rem;
+    max-height: 520px;
+}
+/* 컨텐츠 */
+.cntWrap{
+    margin-top: min(0.5rem,20px);
+}
+.content h2{
+    font-size: min(2.5em,25px);
+}
+/* 컨텐츠1 */
+.content.cnt01 header{
+    display: inherit;
+}
+.content.cnt01 h2{
+    line-height: min(1rem,40px);
+    font-size: min(2.5em,25px);
+    margin-left: 0;
+}
+.content.cnt01 .tab{
+    width: 100%;
+}
+.content.cnt01 li{
+    width: calc(100% / 4 - 10px);
+}
+.content.cnt01 h4{
+    font-size: min(1.4em,14px);
+}
+.tab .image{
+    height: 1rem;
+}
+.content.cnt01 .leftBtn{
+    display: none;
+}
+.content.cnt01 section{
+    margin-top: min(0.5rem,20px);
+    height: 6rem;
+    max-height: 240px;
+}
+.content.cnt01 .article{
+    height: 6rem;
+    max-height: 240px;
+}
+.content.cnt01 .article:nth-child(2) .image{
+    left: 40%;
+}
+.content.cnt01 .article:nth-child(2)~.article .image{
+    left: 5%;
+}
+.content.cnt01 .article .image{
+    height: 6rem;
+    max-height: 240px;
+    width: 60%;
+}
+.content.cnt01 .article .texts{
+    left: 0;
+    width: 40%;
+    padding-top: min(1.5rem,60px);
+}
+.content.cnt01 h3{
+    font-size: min(2em,20px);
+}
+.content.cnt01 p{
+    display: none;
+}
+.content.cnt01 .texts .btn{
+    height: 1rem;
+    max-height: 40px;
+    font-size: min(1.5em,15px);
+    line-height: min(1rem,40px);
+}
+.content.cnt01 .bt{
+    margin: 0 auto;
+    text-align: center;
+}
+.content.cnt01 .btn:hover .bt{
+    margin: 0 auto;
+    text-align: center;
+}
+.content.cnt01 .btn::after{
+    font-size: min(1.5em,15px);
+}
+.banner.bnr01 .tab{
+    right: 0;
+}
+/* 배너 */
+.bnrWrap:nth-child(4){
+    margin-top: min(1rem,40px);
+    padding-top: min(1rem,40px);
+    padding-bottom: min(1rem,40px);
+}
+.banner.bnr01{
+    height: 19.5rem;
+    max-height: 780px;
+}
+.bnrWrap .tab{
+    top: -0.7rem;
+    right: 10%;
+}
+.bnrWrap li{
+    font-size: min(1.5em,15px);
+}
+.bnrWrap li.show2 span{
+    margin-top: -14px;
+}
+.banner.bnr01 .image.i1{
+    width: calc(100% / 4 * 3);
+    height: 6rem;
+    max-height: 240px;
+    bottom: min(13.5rem,540px);
+}
+.banner.bnr01 .image.i2{
+    width: 95%;
+    height: 7rem;
+    max-height: 280px;
+    bottom: 5.9rem;
+}
+.banner.bnr01 .dsg{
+    height: 2rem;
+    max-height: 80px;
+    top: 12rem;
+}
+.banner.bnr01 h2{
+    font-size: min(4em,40px);
+    line-height: min(1rem,40px);
+    word-spacing:5px;
+    height: 1rem;
+    max-height: 40px;
+}
+.banner.bnr01 h2:nth-child(1){
+    top: 0.8rem;
+    right: 10px;
+}
+.banner.bnr01 h2:nth-child(2){
+    top: 1.1rem;
+}
+.banner.bnr01 .image.i3{
+    width: 60%;
+    height: 5rem;
+    max-height: 360px;
+}
+/* 컨텐츠 */
+.cntWrap:nth-child(5){
+    padding-bottom: min(2.5rem,100px);
+}
+.content.cnt02 section{
+    margin-top: min(0.5rem,20px);
+    display: inherit;
+}
+.content.cnt02 .artLeft{
+    width: 100%;
+    height: 11.5rem;
+    max-height: 580px;
+}
+.content.cnt02 .artRight{
+    width: 100%;
+}
+.content.cnt02 .artLeft article:nth-child(1){
+    width: 98%;
+    top: 0;
+    margin-left: auto;
+}
+.content.cnt02 .artLeft .image.i1{
+    height: 6rem;
+    max-height: 240px;
+}
+.content.cnt02 .artLeft .image.i2{
+    height: 5rem;
+    max-height: 200px;
+}
+.content.cnt02 .artLeft article:nth-child(2){
+    width: 80%;
+    left: auto;
+    right: 0;
+}
+.content.cnt02 .artLeft article:nth-child(2)::before{
+    content: 'elia 501 queen';
+}
+.content.cnt02 .artRight{
+    height: 7rem;
+    max-height: 280px;
+}
+.content.cnt02 .artRight article:nth-child(1){
+    display: none;
+}
+.content.cnt02 .artRight article:nth-child(2){
+    top: min(0.6rem,24px);
+}
+.content.cnt02 .artRight article:nth-child(2)::before{
+    bottom: min(2rem,80px);
+    content: 'elia 501 queen';
+    right: 0;
+    bottom: min(1.5rem,60px);
+}
+.content.cnt02 .artRight .image.i2{
+    height: 5rem;
+    background-position: bottom;
+    width: 90%;
+}
+.content.cnt02 .artRight .top{
+    font-size: min(1.8em,18px);
+}
+.content.cnt02 h4{
+    font-size: min(1.8em,18px);
+    top: min(-0.5rem,-20px);
+}
+/* 배너 */
+.banner.bnr02 div.play{
+    width: 100%;
+    height: 4.5rem;
+}
+.banner.bnr02 video{
+    height: 4.5rem;
+}
+.banner.bnr02 div.play::after{
+    display: none;
+}
+/* 배너 */
+.bnrWrap{
+    margin-top: min(1rem,40px);
+}
+.banner.bnr03 div.group{
+    display: inherit;
+}
+.banner.bnr03 .texts{
+    width: 100%;
+}
+.group .image{
+    width: 80%;
+    height: 5rem;
+    max-height: 200px;
+}
+.banner.bnr03 .image.i1{
+    width: 100%;
+    height: 6rem;
+    max-height: 240px;
+}
+.banner.bnr03 .image.i2{
+    display: none;
+}
+.banner.bnr03 .image.i3{
+    width: 60%;
+    margin: initial;
+    margin-top: min(0.5rem,20px);
+    margin-left: auto;
+    height: 6rem;
+    max-height: 240px;
+}
+.banner.bnr03 p{
+    height: 40px;
+    overflow: hidden;
+    white-space: normal;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+  -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+/* 푸터 */
+.ftrWrap{
+    margin-top: min(1rem,40px);
+}
+.ftrTop{
+    height: 0.7rem;
+    max-height: 28px;
+}
+footer .ftrLeft{
+    padding-top: min(0.5rem,20px);
+    padding-bottom: min(0.5rem,20px);
+}
+footer .ftrRight{
+    padding-top: min(0.5rem,20px);
+    padding-bottom: min(0.5rem,20px);
+}
+footer h5{
+    display: none;
+}
+footer .sns{
+    display: inherit;
+    justify-content: baseline;
+    line-height: min(1rem,40px);
+    font-size: min(1.5em,15px);
+}
+footer li:nth-child(1){
+    font-size: min(1.5em,15px);
+}
+.top{
+    margin-top: min(0.5rem,20px);
+}
+.btm li{
+    line-height: min(1rem,40px);
+}
+.btm li:nth-child(1){
+    margin-top: 0;
+}
+.ftrBtm{
+    height: 1rem;
+    max-height: 40px;
+}
+.ftrBtm h1{
+    font-size: 2.5em;
+    line-height: min(1rem,40px);
+}
+/* 네비박스 */
+.navBox{
+    padding: 0;
+}
+.navTop h1{
+    font-size: min(3.5em,35px);
+    line-height: min(1rem,40px);
+}
+.navTop .btn{
+    font-size: min(3.5em,35px);
+    line-height: min(1rem,40px);
+}
+.box{
+    border: 5px solid #a4a1a3;
+    height: 89vh;
+    padding-left: 40px;
+    margin-top: min(0.5rem,20px);
+}
+.navLeft{
+    padding-top: min(2.5rem,100px);
+    padding-bottom: min(2.5rem,100px);
+}
+.navLeft h2{
+    font-size: min(3.5em,35px);
+    line-height: min(1.5rem,60px);
+}
+.navLeft h2:nth-child(2):after{
+    width: 90%;
+    bottom: 10px;
+    height: 15px;
+}
+.navLeft h2:hover:after{
+    display: none;
+}
+.navRight{
+    display: none;
+}
+.navLeft .sns{
+    width: 50%;
+}
+.navLeft .btn{
+    font-size: min(2em,20px);
+}
