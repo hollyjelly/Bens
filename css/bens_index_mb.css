@@ -169,6 +169,15 @@ body{
     height: 5rem;
     max-height: 360px;
 }
+.banner.bnr01 .image.i1 span{
+    font-size:min(1.2em,12px);
+}
+.banner.bnr01 .image.i2 span{
+    font-size:min(1.2em,12px);
+}
+.banner.bnr01 .image.i3 span{
+    font-size:min(1.2em,12px);
+}
 /* 컨텐츠 */
 .cntWrap:nth-child(5){
     padding-bottom: min(2.5rem,100px);
@@ -216,8 +225,14 @@ body{
 .content.cnt02 .artRight article:nth-child(2){
     top: min(0.6rem,24px);
 }
+.content.cnt02 .artLeft article:nth-child(1)::before{
+    font-size: min(1.2em,12px);
+}
+.content.cnt02 .artLeft article:nth-child(2)::before{
+    font-size: min(1.2em,12px);
+}
 .content.cnt02 .artRight article:nth-child(2)::before{
-    bottom: min(2rem,80px);
+    font-size: min(1.2em,12px);
     content: 'elia 501 queen';
     right: 0;
     bottom: min(1.5rem,60px);

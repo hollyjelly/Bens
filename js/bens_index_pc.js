@@ -31,7 +31,7 @@ $(function(){
         he3 =10;
         mh3 =400;
 
-    }else if(wd>402 && wd <= 1024){
+    }else if(wd>420 && wd <= 1024){
 
         he =9;
         mh =360;

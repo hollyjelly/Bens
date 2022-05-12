@@ -69,7 +69,7 @@ $(function(){
     function scroolpm(){
         $('html,body').stop().animate({
             scrollTop:'0'
-        },1000)
+        },1000);
     }
     function sizlicli(){
         var ind = $(this).index();
@@ -85,7 +85,7 @@ $(function(){
     function buytal(){
         alert('구매페이지로 넘어가시겠습니까?');
     }
-
+    
     mainbtn.eq(0).click(buytal);
     mainbtn.eq(1).click(cartal);
     sizli.click(sizlicli);

@@ -99,8 +99,8 @@ main h4{
     right: 36%;
 }
 .banner.bnr02 .image.i1>span:nth-child(8){
-    left: 24%;
-    bottom: 16px;
+    left: 30%;
+    bottom: min(0.7rem,28px);
 }
 .banner.bnr02 .btn{
     display: block;

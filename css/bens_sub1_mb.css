@@ -73,19 +73,21 @@ body{
     margin-top: 0;
 }
 .mainRight .op{
-    height: 0.5rem;
-    max-height: 20px;
+    height: 1.5rem;
+    max-height: 60px;
+    line-height: min(1.5rem,60px);
     text-align: right;
     position: absolute;
     width: 100%;
     right: 20%;
-    top: min(1rem,40px);
+    top: min(0.6rem,24px);
 }
 .mainRight select{
     font-size: min(1.8em,18px);
-    line-height: min(0.5rem,20px);
+    line-height: min(1.5rem,60px);
     background-color: #fff;
     width: 30%;
+    height: min('1.5rem,60px');
 }
 .mainRight .btns{
     display: flex;

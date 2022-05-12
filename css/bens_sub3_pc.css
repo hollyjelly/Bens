@@ -167,7 +167,7 @@ h5 span{
     display: none;
 }
 .banner.bnr02 .images .image.i1{
-    background-image: url('../images/sub3/showroom.png');
+    background-image: url('../images/sub3/showroom2.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -285,7 +285,7 @@ h5 span{
 }
 .banner.bnr02 .image.i1>span:nth-child(7){
     bottom: min(7.5rem,300px);
-    right: 25%;
+    right: 30%;
 }
 .banner.bnr02 .image.i1>span:nth-child(7)::after{
     content: '부산';
@@ -298,7 +298,7 @@ h5 span{
     bottom: 0px;
 }
 .banner.bnr02 .image.i1>span:nth-child(8){
-    bottom: 25px;
+    bottom: min(1rem,40px);
     left: 18%;
 }
 .banner.bnr02 .image.i1>span:nth-child(8)::after{

@@ -772,7 +772,7 @@ body{
 }
 
 /* 배너2 */
-.bnrWrap:nth-last-child(5){
+.bnrWrap:nth-last-child(6){
     margin-top: 0px;
     border-top: 3px solid #cbcacc;
     border-bottom: 3px solid #cbcacc;
