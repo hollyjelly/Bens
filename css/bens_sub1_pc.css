@@ -795,7 +795,7 @@ header{
 .content.cnt03 article:nth-child(5) .texts{
     position: absolute;
     width: calc(100% / 8.5 * 5.5);
-    top: -15%;
+    top: min(-2.5rem,-100px);
 }
 .content.cnt03 article:nth-child(6) .texts{
     position: absolute;

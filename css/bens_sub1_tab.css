@@ -247,6 +247,8 @@ header{
     width: 20%;
     height: 1.5rem;
     max-height: 60px;
+    left: -4%;
+    top: min(-0.2rem,-8px);
 }
  /* 컨텐츠2 */
  .cntWrap:nth-child(5){
@@ -355,7 +357,8 @@ header{
     top: min(0.5rem,20px);
  }
  .content.cnt03 article:nth-child(5) .texts{
-     top: min(-6.5rem,-260px);
+     top: min(-5.5rem,-150px);
+     left: 25%;
  }
  .content.cnt03 article:nth-child(6){
      margin-top: 0;
