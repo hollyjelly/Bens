@@ -5,22 +5,25 @@ body{
     font-size: 2.4vw;
 }
 /* 헤더 */
-
+.hdrWrap header{
+    height: 1rem;
+    max-height: 40px;
+}
 .hdrWrap .logo{
-    height: 1.25rem;
+    height: min(1.25rem,50px);
     max-height: 50px;
 }
 .hdrWrap h1{
     font-size: min(3.5em,35px);
     line-height: min(1.25rem,50px);
 }
-.hdrWrap .btn{
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
+.hdrWrap .btns{
+    width: 28%;
+    margin-top: min(0.2rem,8px);
 }
-.hdrWrap .btn:nth-child(1){
-    margin-right: 10px;
+.hdrWrap .btn{
+    height: 0.8rem;
+    max-height: 32px;
 }
 /* 메인 */
 main{

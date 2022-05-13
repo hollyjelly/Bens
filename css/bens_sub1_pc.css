@@ -27,20 +27,15 @@ body{
 .hdrWrap header{
     width: 90%;
     margin: 0 auto;
-    padding-top: min(1rem,40px);
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    z-index: 2;
-}
- .hdrWrap header::after{
-    content: '';
-    display: block;
-    clear: both;
+    z-index: 1;
 }
 .hdrWrap .logo{
-    width: calc(100% / 12 * 1);
     height: 2rem;
     max-height: 80px;
-    float: left;
 }
 .hdrWrap h1{
     font-size: min(6em,60px);
@@ -49,16 +44,16 @@ body{
     cursor: pointer;
     font-family: 'Kanit-Lightr';
     font-weight: 700;
-    cursor: pointer;
 }
 .hdrWrap .btns{
-    float: right;
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
 }
 .hdrWrap .btn{
-    float: left;
-    width: 40px;
-    height: min(1rem,40px);
-    margin-top: 15px;
+    width: 50%;
+    height: 1.3rem;
+    max-height: 52px;
     cursor: pointer;
     color: transparent;
 }
@@ -67,14 +62,14 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 30px;
+
 }
 .hdrWrap .btn:nth-child(2){
     background-image: url('../images/iconmanu/bars-staggered-solid.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 30px;
+
 }
 /* 메인 */
 .mainWrap{
@@ -1083,6 +1078,10 @@ header{
     transition: all 0.5s;
     top: 0;
     right: 0;
+    line-height: min(2rem,80px);
+    height: 2rem;
+    max-height: 80px;
+    overflow: hidden;
 }
 .content.cnt05 .btn:hover h4{
     right: 20%;

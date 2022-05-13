@@ -17,14 +17,13 @@ body{
     font-size: min(3.5em,35px);
     line-height: min(1.25rem,50px);
 }
-.hdrWrap .btn{
-    width: 30px;
-    height: 0.75rem;
-    max-height: 30px;
-    margin-top: 10px;
+.hdrWrap .btns{
+    width: 28%;
+    margin-top: min(0.2rem,8px);
 }
-.hdrWrap .btn:nth-child(1){
-    margin-right: 10px;
+.hdrWrap .btn{
+    height: 0.8rem;
+    max-height: 32px;
 }
 /* 메인 */
 .mainWrap{
