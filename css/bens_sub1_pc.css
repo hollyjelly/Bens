@@ -60,9 +60,17 @@ body{
     height: min(1rem,40px);
     margin-top: 15px;
     cursor: pointer;
+    color: transparent;
 }
 .hdrWrap .btn:nth-child(1){
     background-image: url('../images/iconmanu/search.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 30px;
+}
+.hdrWrap .btn:nth-child(2){
+    background-image: url('../images/iconmanu/bars-staggered-solid.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

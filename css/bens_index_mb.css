@@ -30,7 +30,6 @@ body{
 .mainWrap{
     height: 13rem;
     max-height: 520px;
-    background-attachment: local;
 }
 /* 컨텐츠 */
 .cntWrap{
@@ -125,8 +124,9 @@ body{
     max-height: 780px;
 }
 .bnrWrap .tab{
+    width: 40%;
     top: -0.7rem;
-    right: 10%;
+    right: 5%;
 }
 .bnrWrap li{
     font-size: min(1.5em,15px);

@@ -57,12 +57,20 @@ body{
     max-height: 40px;
     margin-top: 15px;
     cursor: pointer;
+    color: transparent;
 }
 .hdrWrap .btn:nth-child(1){
     background-image: url('../images/iconmanu/search.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    margin-right: 30px;
+}
+.hdrWrap .btn:nth-child(2){
+    background-image: url('../images/iconmanu/bars-staggered-solid.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-right: 30px;
 }
 
@@ -306,7 +314,6 @@ body{
     width: calc(100% / 10 * 5 - 20px);
     height: 14rem;
     max-height: 560px;
-    background-color: #ccc;
     position: absolute;
     left: 48%;
     transition:all 2.5s;
@@ -448,7 +455,6 @@ body{
     width: calc(100% / 12 * 5.5);
     height: 12rem;
     max-height: 480px;
-    background-color: #fc0;
     bottom: min(18.2rem,728px);
     left: 20px;
     z-index: 1;
@@ -471,7 +477,6 @@ body{
     width: calc(100% / 12 * 7);
     height: 13rem;
     max-height: 550px;
-    background-color: pink;
     bottom: min(12.9rem,516px);
     right: 20px;
     background-image: url('../images/main/banner01_mordern_02.jpg');
@@ -525,7 +530,6 @@ body{
     height: 10rem;
     max-height: 400px;
     width: calc(100% / 12 * 5.5);
-    background-color: green;
     bottom: 0;
     left: 150px;
     background-image: url('../images/main/banner01_mordern_03.jpg');

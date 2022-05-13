@@ -57,12 +57,20 @@ body{
     max-height: 40px;
     margin-top: 15px;
     cursor: pointer;
+    color: transparent;
 }
 .hdrWrap .btn:nth-child(1){
     background-image: url('../images/iconmanu/search.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    margin-right: 30px;
+}
+.hdrWrap .btn:nth-child(2){
+    background-image: url('../images/iconmanu/bars-staggered-solid.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-right: 30px;
 }
 /* 메인 */
@@ -136,13 +144,14 @@ main h4{
     line-height: min(2rem,80px);
     font-family: 'NanumMyeongjo-Regular';
     position: relative;
+    margin-left: 5%;
 }
 h5 span{
     font-size: min(1.2em,12px);
     line-height: min(1.5rem,20px);
     position: absolute;
-    left: -10px;
-    top: 10px;
+    left: -3%;
+    top: 0;
     color: #a8a7a8;
 }
 /* 배너2 */

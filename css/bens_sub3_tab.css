@@ -17,6 +17,7 @@ body{
 .mainWrap{
     padding-top: min(7rem,280px);
     padding-bottom: min(2.5rem,100px);
+    background-attachment: local;
 }
 main{
     width: 90%;
