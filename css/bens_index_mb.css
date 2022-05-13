@@ -30,6 +30,7 @@ body{
 .mainWrap{
     height: 13rem;
     max-height: 520px;
+    background-attachment: local;
 }
 /* 컨텐츠 */
 .cntWrap{
