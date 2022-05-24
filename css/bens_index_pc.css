@@ -482,20 +482,6 @@ body{
     bottom: min(0.5rem,20px);
     left: -25px;
 }
-.banner.bnr01 .image.i4{
-    animation-name: tab1;
-    animation-duration: 3.5s;
-}
-@keyframes pc2{
-    0%{
-        bottom: min(9.9rem,396px);
-        opacity: 0;
-    }
-    100%{
-        bottom: min(12.9rem,516px);
-        opacity: 1;
-    }
-}
 .banner.bnr01 .image:nth-child(2){
     width: calc(100% / 12 * 7);
     height: 13rem;
@@ -507,18 +493,18 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-.banner.bnr01 .image.i5{
-    animation-name: tab2;
-    animation-duration: 3.5s;
+.banner.bnr01 .image.i2{
+    animation-name: pc2;
+    animation-duration: 4s;
 }
-@keyframes tab2{
+@keyframes pc2{
     0%{
-        opacity: 0;
         bottom: min(10.9rem,436px);
+        opacity: 0;
     }
     100%{
-        opacity: 1;
         bottom: min(12.9rem,516px);
+        opacity: 1;
     }
 }
 .banner.bnr01 .image:nth-child(2) span{
