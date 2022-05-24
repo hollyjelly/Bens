@@ -120,17 +120,45 @@ body{
 .bnrWrap li{
     font-size: min(2.5em,25px);
 }
-.banner.bnr01 .image.i1{
+.banner.bnr01 .image:nth-child(1){
     width: calc(100% / 8 * 3.5);
     height: 9rem;
     max-height: 360px;
     bottom: min(16rem,640px);
 }
-.banner.bnr01 .image.i2{
+.banner.bnr01 .image.i4{
+    animation-name: tab1;
+    animation-duration: 3s;
+}
+@keyframes tab1 {
+    0%{
+        opacity: 0;
+        bottom: min(14rem,560px);
+    }
+    100%{
+        opacity: 1;
+        bottom: min(16rem,640px);
+    }
+}
+.banner.bnr01 .image:nth-child(2){
     width: calc(100% / 8 * 4.5);
     height: 11rem;
     max-height: 440px;
     bottom: min(10.7rem,428px);
+}
+.banner.bnr01 .image.i5{
+    animation-name: tab2;
+    animation-duration: 3.5s;
+}
+@keyframes tab2{
+    0%{
+        opacity: 0;
+        bottom: min(8.7rem,348px);
+    }
+    100%{
+        opacity: 1;
+        bottom: min(10.7rem,428px);
+    }
 }
 .banner.bnr01 .dsg{
     top: 13rem;
@@ -143,7 +171,7 @@ body{
 .banner.bnr01 h2:nth-child(1){
     bottom: min(0.25rem,10px);
 }
-.banner.bnr01 .image.i3{
+.banner.bnr01 .image:nth-child(4){
     left: 10%;
 }
 /* 컨텐츠2 */

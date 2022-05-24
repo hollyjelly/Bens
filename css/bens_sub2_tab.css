@@ -57,10 +57,22 @@ main p{
     font-size: min(2.2em,22px);
 }
 /* 컨텐츠1 */
+.content.cnt01 .image{
+    z-index: 0;
+}
 .content.cnt01 .image.i1{
     height: 8rem;
     max-height: 320px;
     width: 50%;
+}
+.content.cnt01 .image.i1::before{
+    display: none;
+}
+.content.cnt01 .image.i1::after{
+    display: none;
+}
+.content.cnt01 .image.i1 span{
+    display: none;
 }
 .content.cnt01 .image.i2{
     width: calc(100% / 8 * 3);
@@ -82,6 +94,7 @@ main p{
     width: 50%;
     height: 8.87rem;
     max-height: 355px;
+    z-index: 0;
 }
 .content.cnt02 article:nth-child(2){
     margin-top: min(1.2rem,-50px);
@@ -90,6 +103,10 @@ main p{
     width: calc(100% / 8 * 3.5);
     height: 7.5rem;
     max-height: 300px;
+    z-index: 0;
+}
+.content.cnt02 article .image span{
+    display: none;
 }
 .content.cnt02 article:nth-child(2) .texts{
     height: 7.5rem;

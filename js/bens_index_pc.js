@@ -9,101 +9,55 @@ $(function(){
     var b1bgc = $('.bnrWrap').eq(0);
     var b1btx = $('.banner.bnr01 h2');
     var b1tg = $('.banner.bnr01 .dsg');   
-    var bni1 =$('.banner.bnr01 .image.i1');
-    var bni2 =$('.banner.bnr01 .image.i2');
-    var bni3 =$('.banner.bnr01 .image.i3');
+    var bni1 =$('.banner.bnr01 .image').eq(0);
+    var bni2 =$('.banner.bnr01 .image').eq(1);
+    var bni3 =$('.banner.bnr01 .image').eq(2);
     var fixbtn = $('.topbtn');
     var wd = $(window).width();
-    var he =0;
-    var he2 =0;
-    var he3 =0;
-    var mh =0;
-    var mh2 =0;
-    var mh3 =0;
+    var bn1 = 0, bn2 = 0;
 
-    
     if(wd>1024){
 
-        he =12;
-        mh =480;
-        he2 =13;
-        mh2 =550;
-        he3 =10;
-        mh3 =400;
+        bn1 = '1'
+        bn2 = '2'
+        bn3 = '3'
+        
+    }else if(wd<=1024 && wd>420){
 
-    }else if(wd>420 && wd <= 1024){
-
-        he =9;
-        mh =360;
-        he2 =11;
-        mh2 =440;
-        he3 =10;
-        mh3 =400;
+        bn1 = '4'
+        bn2 = '5'
         
     }else{
         
-        he =6;
-        mh =240;
-        he2 =7;
-        mh2 =280;
-        he3 =5;
-        mh3 =360; 
+        bn1 = '6'
+        bn2 = '7'
 
     }
-        function bnrbtn1(){
-            bni1.css({opacity:'0',height:'3rem'});
-            bni2.css({opacity:'0',height:'3rem'});
-            bni3.css({opacity:'0',height:'3rem'});
-            bni1.stop().animate({
-                height:he+'rem',
-                maxHeight:mh+'px',
-                opacity:'1'
-            },2000);
-            bni2.stop().animate({
-                height:he2+'rem',
-                maxHeight:mh2+'px',
-                opacity:'1'
-            },2000);
-            bni3.stop().animate({
-                height:he3+'rem',
-                maxHeight:mh3+'px',
-                opacity:'1'
-            },2000);
-            b1btx.stop().css({height:'0',overflow:'hidden',opacity:'0'});
-            b1btx.stop().animate({
-                height:'3.5rem',
-                opacity:'1'
-            },1800);
-        }
-        function bnrbtn2(){
-            bni1.css({opacity:'0',height:'3rem'});
-            bni2.css({opacity:'0',height:'3rem'});
-            bni3.css({opacity:'0',height:'3rem'});
-            bni1.stop().animate({
-                height:he+'rem',
-                maxHeight:mh+'px',
-                opacity:'1'
-            },2000);
-            bni2.stop().animate({
-                height:he2+'rem',
-                maxHeight:mh2+'px',
-                opacity:'1'
-            },2000);
-            bni3.stop().animate({
-                height:he3+'rem',
-                maxHeight:mh3+'px',
-                opacity:'1'
-            },2000);
-            b1btx.css({height:'0',overflow:'hidden',opacity:'0'});
-            b1btx.stop().animate({
-                height:'3.5rem',
-                opacity:'1'
-            },1800);
-        }
-        
-        b1btn.eq(0).click(bnrbtn1);
-        b1btn.eq(1).click(bnrbtn2);
 
+        function bnrbtn1(){
+            bni1.removeClass('i'+bn1);
+            setTimeout(function(){
+                bni1.addClass('i'+bn1);
+            },1);
+            bni2.removeClass('i'+bn2);
+            setTimeout(function(){
+                bni2.addClass('i'+bn2);
+            },1);
+            bni3.removeClass('i3');
+            setTimeout(function(){
+                bni3.addClass('i3');
+            },1);
+
+            b1btx.eq(0).removeClass('op');
+            setTimeout(function(){
+                b1btx.eq(0).addClass('op')
+            });
+            b1btx.eq(1).removeClass('op2');
+            setTimeout(function(){
+                b1btx.eq(1).addClass('op2')
+            });
+        }
+        b1btn.click(bnrbtn1);
 
     
     c1gr.css({marginLeft:'-100%'});
@@ -165,6 +119,30 @@ $(function(){
             }
         }
     }
+    c1gr.swipeleft(function(){
+        c1gr.stop().animate({
+            marginLeft:'-200%',
+        },2000,function(){ 
+            c1gr.find('.article:first').appendTo(c1gr);
+            c1gr.css({marginLeft:'-100%'});
+            var i = Number(c1gr.find('.article:eq(1)').attr('data-ind'));
+            console.log(i)
+            c1li.removeClass('show');
+            c1li.eq(i).addClass('show');
+        });
+    });
+    c1gr.swiperight(function(){
+        c1gr.stop().animate({
+            marginLeft:'0%',
+        },2000,function(){ 
+            c1gr.find('.article:last').prependTo(c1gr);
+            c1gr.css({marginLeft:'-100%'});
+            var i = Number(c1gr.find('.article:eq(1)').attr('data-ind'));
+            console.log(i)
+            c1li.removeClass('show');
+            c1li.eq(i).addClass('show');
+        });
+    });
     // 메뉴박스
     function mnuB(){
         box.stop().animate({

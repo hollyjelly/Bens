@@ -316,7 +316,7 @@ body{
     box-shadow: 4px 4px 8px rgb(75, 75, 75);
 }
 .content.cnt01 .article:nth-child(1) .image{
-    left: 30%;
+    left: 10%;
 }
 .content.cnt01 .article:nth-child(2)~.article .image{
     left: 10%;
@@ -446,7 +446,7 @@ body{
     position: relative;
     position: absolute;
 }
-.banner.bnr01 .image.i1{
+.banner.bnr01 .image:nth-child(1){
     width: calc(100% / 12 * 5.5);
     height: 12rem;
     max-height: 480px;
@@ -458,7 +458,21 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-.banner.bnr01 .image.i1 span{
+.banner.bnr01 .image.i1{
+    animation-name: pc1;
+    animation-duration: 3s;
+}
+@keyframes pc1{
+    0%{
+        bottom: min(16.2rem,648px);
+        opacity: 0;
+    }
+    100%{
+        bottom: min(18.2rem,728px);
+        opacity: 1;
+    }
+}
+.banner.bnr01 .image:nth-child(1) span{
     writing-mode: vertical-rl;
     font-size: min(1.7em,17px);
     text-transform: capitalize;
@@ -468,7 +482,21 @@ body{
     bottom: min(0.5rem,20px);
     left: -25px;
 }
-.banner.bnr01 .image.i2{
+.banner.bnr01 .image.i4{
+    animation-name: tab1;
+    animation-duration: 3.5s;
+}
+@keyframes pc2{
+    0%{
+        bottom: min(9.9rem,396px);
+        opacity: 0;
+    }
+    100%{
+        bottom: min(12.9rem,516px);
+        opacity: 1;
+    }
+}
+.banner.bnr01 .image:nth-child(2){
     width: calc(100% / 12 * 7);
     height: 13rem;
     max-height: 550px;
@@ -479,7 +507,21 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-.banner.bnr01 .image.i2 span{
+.banner.bnr01 .image.i5{
+    animation-name: tab2;
+    animation-duration: 3.5s;
+}
+@keyframes tab2{
+    0%{
+        opacity: 0;
+        bottom: min(10.9rem,436px);
+    }
+    100%{
+        opacity: 1;
+        bottom: min(12.9rem,516px);
+    }
+}
+.banner.bnr01 .image:nth-child(2) span{
     writing-mode: vertical-rl;
     font-size: min(1.7em,17px);
     text-transform: capitalize;
@@ -511,17 +553,50 @@ body{
     word-spacing: 15px;
     overflow: hidden;
     z-index: 2;
+    bottom: 0;
 }
 .banner.bnr01 h2:nth-child(1){
-    bottom: 10px;
+    bottom: min(0.4rem,16px);
     right: 20px;
     color: #eeeeec;
     opacity: 0.3;
 }
+.banner.bnr01 h2.op{
+    animation-name: txt1;
+    animation-duration: 4s;
+}
+@keyframes txt1{
+    0%{
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    100%{
+        opacity: 0.3;
+        height: 3.5rem;
+        max-height: 140px;
+    }
+}
 .banner.bnr01 h2:nth-child(2){
     opacity: 0.7;
 }
-.banner.bnr01 .image.i3{
+.banner.bnr01 h2.op2{
+    animation-name: txt2;
+    animation-duration: 4.3s;
+}
+@keyframes txt2{
+    0%{
+        opacity: 0;
+        overflow: hidden;
+        height: 0;
+    }
+    100%{
+        opacity: 0.7;
+        height: 3.5rem;
+        max-height: 140px;
+    }
+}
+.banner.bnr01 .image:nth-child(4){
     height: 10rem;
     max-height: 400px;
     width: calc(100% / 12 * 5.5);
@@ -532,7 +607,21 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-.banner.bnr01 .image.i3 span{
+.banner.bnr01 .image.i3{
+    animation-name: pc3;
+    animation-duration: 3.2s;
+}
+@keyframes pc3{
+    0%{
+        bottom: min(-2rem,-80px);
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+.banner.bnr01 .image:nth-child(4) span{
     writing-mode: vertical-rl;
     font-size: min(1.7em,17px);
     text-transform: capitalize;
@@ -836,12 +925,12 @@ body{
 }
 .banner.bnr03 .btns{
     position: relative;
-    cursor: pointer;
     height: 2rem;
     max-height: 80px;
     overflow: hidden;
 }
 .banner.bnr03 .btn{ 
+    cursor: pointer;
     width: 25%;
     height: 2rem;
     max-height: 80px;

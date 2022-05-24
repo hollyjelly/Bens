@@ -171,7 +171,6 @@ main p::after{
     font-size: min(3em,30px);
     line-height: min(1rem,40px);
     font-family: 'NotoSerifKR-Light';
-    text-shadow: 1.5px 0.5px 1px #fff;
 }
 /* 컨텐츠1 */
 .content.cnt01 article{
@@ -211,7 +210,9 @@ main p::after{
     right: 0;
 }
 .content.cnt01 .image{
-    color: transparent;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
 }
 .content.cnt01 .image.i1{
     width: calc(100% / 12 * 6.5);
@@ -225,6 +226,49 @@ main p::after{
     background-position: center;
     background-size: cover;
 }
+.content.cnt01 .image.i1 span{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: min(2rem,80px);
+    text-align: right;
+    z-index: 4;
+    font-size: min(3em,30px);
+    line-height: min(1rem,40px);
+    font-family: 'NotoSerifKR-Light';
+    bottom: min(2.9rem,119px);
+    right: -13.85%;
+}
+.content.cnt01 .image.i1::before{
+    content: '변치않는 미의 기준 본질을 지키며';
+    display: block;
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: min(2rem,80px);
+    text-align: center;
+    top: min(2.5rem,100px);
+    left:-64.5%;
+    z-index: 4;
+    font-size: min(3em,30px);
+    line-height: min(1rem,40px);
+    font-family: 'NotoSerifKR-Light';
+}
+.content.cnt01 .image.i1::after{
+    content: '트렌디함을 신경쓰겠습니다.';
+    display: block;
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: min(2rem,80px);
+    text-align: center;
+    top: min(3.5rem,140px);
+    left:-64.4%;
+    z-index: 4;
+    font-size: min(3em,30px);
+    line-height: min(1rem,40px);
+    font-family: 'NotoSerifKR-Light';
+}
 .content.cnt01 .image.i2{
     width: calc(100% / 12 * 4.5);
     height: 7.5rem;
@@ -234,6 +278,8 @@ main p::after{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: transparent;
+    z-index: 0;
 }
 /* 컨텐츠2 */
 .content.cnt02 header h2{
@@ -256,7 +302,16 @@ main p::after{
     margin-top: 20px;
 }
 .content.cnt02 article .image{
-    color: transparent;
+    position: relative;
+    font-size: min(3em,30px);
+    color: #fff;
+    font-family: 'NotoSerifKR-Light';
+    overflow: hidden;
+    z-index: 2;
+}
+.content.cnt02 article .image span{
+    position: absolute;
+    z-index: 3;
 }
 .content.cnt02 article .image.i1{
     width: calc(100% / 12 * 6.5);
@@ -266,6 +321,10 @@ main p::after{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.content.cnt02 article .image.i1 span{
+    right: -71%;
+    top: min(2.9rem,118px);
 }
 .content.cnt02 article .image.i2{
     width: calc(100% / 12 * 4.8);
@@ -277,6 +336,10 @@ main p::after{
     background-position: center;
     background-size: cover;
 }
+.content.cnt02 article .image.i2 span{
+    left: -87%;
+    bottom: min(1.9rem,78px);
+}
 .content.cnt02 article .image.i3{
     width: calc(100% / 12 * 5.5);
     height: 9.5rem;
@@ -285,6 +348,8 @@ main p::after{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: transparent;
+    z-index: 0;
 }
 .content.cnt02 .texts{
     position: relative;
@@ -317,7 +382,7 @@ main p::after{
 }
 .content.cnt02 article:nth-child(3) h3{
     bottom: min(2rem,80px);
-    right: min(1rem,40px);
+    right: 0%;
 }
 /* 컨텐츠3 */
 .content.cnt03 section{
@@ -388,6 +453,7 @@ main p::after{
     top: min(3rem,120px);
     left: 60px;
     text-align: center;
+    text-shadow: 2px 1.5px 1px #fff;
 }
 .btmSlide{
     margin-top: min(-1rem,-40px);

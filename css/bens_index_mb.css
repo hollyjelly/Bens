@@ -133,17 +133,45 @@ body{
 .bnrWrap li.show2 span{
     margin-top: -14px;
 }
-.banner.bnr01 .image.i1{
+.banner.bnr01 .image:nth-child(1){
     width: calc(100% / 4 * 3);
     height: 6rem;
     max-height: 240px;
     bottom: min(13.5rem,540px);
 }
-.banner.bnr01 .image.i2{
+.banner.bnr01 .image.i6{
+    animation-name: mb1;
+    animation-duration: 3s;
+}
+@keyframes mb1 {
+    0%{
+        opacity: 0;
+        bottom: min(11.5rem,460px);
+    }
+    100%{
+        opacity: 1;
+        bottom: min(13.5rem,540px);
+    }
+}
+.banner.bnr01 .image:nth-child(2){
     width: 95%;
     height: 7rem;
     max-height: 280px;
-    bottom: 5.9rem;
+    bottom: min(5.9rem,236px);
+}
+.banner.bnr01 .image.i7{
+    animation-name: mb2;
+    animation-duration: 3.5s;
+}
+@keyframes mb2 {
+    0%{
+        opacity: 0;
+        bottom: min(3.9rem,156px);
+    }
+    100%{
+        opacity: 1;
+        bottom: min(5.9rem,236px);
+    }
 }
 .banner.bnr01 .dsg{
     height: 2rem;
@@ -164,7 +192,7 @@ body{
 .banner.bnr01 h2:nth-child(2){
     top: 1.1rem;
 }
-.banner.bnr01 .image.i3{
+.banner.bnr01 .image:nth-child(4){
     width: 60%;
     height: 5rem;
     max-height: 360px;
