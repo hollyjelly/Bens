@@ -16,7 +16,7 @@ body{
     margin-top: min(0.5rem,20px);
 }
 .hdrWrap h1{
-    font-size: max(4.5em,45px);
+    font-size: min(4.5em,45px);
     line-height: min(2.9rem,70px);
 }
 .hdrWrap .btn{
@@ -39,11 +39,11 @@ body{
     max-width: 1024px;
 }
 .cntWrap h2{
-    font-size: max(3em,30px);
+    font-size: min(3em,30px);
 }
 /* 컨텐츠1 */
 .content.cnt01 h4{
-    font-size: max(1.6em,16px);
+    font-size: min(1.6em,16px);
 }
 .tab .image{
     height: 1.25rem;
@@ -68,10 +68,10 @@ body{
     left: 17%;
 }
 .content.cnt01 h3{
-    font-size: max(3em,30px);
+    font-size: min(3em,30px);
 }
 .content.cnt01 p{
-    font-size: max(1.8em,18px);
+    font-size: min(1.8em,18px);
     margin-top: min(1rem,40px);
 }
 .content.cnt01 .texts .btn{
@@ -118,7 +118,7 @@ body{
     right: 3%;
 }
 .bnrWrap li{
-    font-size: max(2.5em,25px);
+    font-size: min(2.5em,25px);
 }
 .banner.bnr01 .image:nth-child(1){
     width: calc(100% / 8 * 3.5);
@@ -166,7 +166,7 @@ body{
     max-height: 120px;
 }
 .banner.bnr01 h2{
-    font-size: max(8em,80px);
+    font-size: min(8em,80px);
 }
 .banner.bnr01 h2:nth-child(1){
     bottom: min(0.25rem,10px);
@@ -236,7 +236,7 @@ body{
     margin-top: min(0.5rem,20px);
 }
 .content.cnt02 .artRight .top{
-    font-size: max(2.5em,25px);
+    font-size: min(2.5em,25px);
     height: 40px;
     overflow: hidden;
 }
@@ -244,7 +244,7 @@ body{
     display: none;
 }
 .content.cnt02 h4{
-    font-size: max(2.5em,25px);
+    font-size: min(2.5em,25px);
     margin-top: 0;
 }
 /* 배너2 */
@@ -275,10 +275,10 @@ body{
     margin-top: min(1rem,40px);
 }
 .banner.bnr03 h2{
-    font-size: max(2.6em,26px);
+    font-size: min(2.6em,26px);
 }
 .banner.bnr03 h2 span{
-    font-size: max(3.5em,35px);
+    font-size: min(3.5em,35px);
 }
 .banner.bnr03 p{
     margin-top: min(0.5rem,20px);
@@ -287,7 +287,7 @@ body{
     display: none;
 }
 .banner.bnr03 h4{
-    font-size: max(2.2em,22px);
+    font-size: min(2.2em,22px);
     right: 21%;
 }
 .banner.bnr03 .btns:hover h4{
@@ -327,7 +327,7 @@ footer li:nth-child(1)~li{
     display: none;
 }
 .ftrBtm h1{
-    font-size: max(3em,30px);
+    font-size: min(3em,30px);
     line-height: min(1.5rem,60px);
 }
 footer .ftrLeft{
@@ -343,7 +343,7 @@ footer p{
 }
 footer h5{
     width: calc(100% / 4 * 3);
-    font-size: max(1.5em,15px);
+    font-size: min(1.5em,15px);
     line-height: 20px;
     margin-left: auto;
 }
@@ -373,7 +373,7 @@ footer .sns .btn:hover::after{
     position: absolute;
     width: calc(100% / 8 * 2);
     bottom: 5%;
-    font-size: max(3.5em,35px);
+    font-size: min(3.5em,35px);
 }
 .navLeft .btn:hover::after{
     display: none;
