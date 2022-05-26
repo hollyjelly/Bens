@@ -198,8 +198,10 @@ main p::after{
 }
 .content.cnt01 h3:nth-child(1){
     top: min(2.5rem,100px);
-    left: 10%;
     text-align: center;
+}
+.content.cnt01  article:nth-child(1) h3{
+    left: 10%;
 }
 .content.cnt01 h3:nth-child(2){
     bottom: min(3rem,120px);
@@ -207,7 +209,7 @@ main p::after{
     text-align: right;
 }
 .content.cnt01 article:nth-child(2) h3{
-    right: 0;
+    left: 30%;
 }
 .content.cnt01 .image{
     overflow: hidden;
@@ -814,6 +816,7 @@ footer h5{
     bottom: 10px;
     left: 0;
     transition: width 0.5s;
+    z-index: -1;
 }
 .navLeft h2:nth-child(1):hover:after{
     width: 57%;

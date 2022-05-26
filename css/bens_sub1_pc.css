@@ -1297,6 +1297,7 @@ footer h5{
     bottom: 10px;
     left: 0;
     transition: width 0.5s;
+    z-index: -1;
 }
 .navLeft h2:nth-child(1):after{
     width: 57%;

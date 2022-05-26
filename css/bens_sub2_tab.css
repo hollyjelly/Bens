@@ -56,6 +56,9 @@ main p{
 .content h3{
     font-size: min(2.2em,22px);
 }
+.content.cnt01  article:nth-child(1) h3{
+    left: 2%;
+}
 /* 컨텐츠1 */
 .content.cnt01 .image{
     z-index: 0;
@@ -145,6 +148,9 @@ main p{
 }
 .btmSlide{
     margin-top: 0px;
+}
+.topSlide .texts h3{
+    left: 0;
 }
 /* 배너 */
 .bnrWrap{

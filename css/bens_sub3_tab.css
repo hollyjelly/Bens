@@ -83,6 +83,9 @@ main h4{
     max-height: 640px;
     min-width: 400px;
 }
+.banner.bnr02 .image.i1>span{
+    font-size: min(1.5em,1px);
+}
 .banner.bnr02 .image.i1>span:nth-child(1){
     top: min(5rem,200px);
     left: 40%;
@@ -121,7 +124,7 @@ main h4{
     text-transform: uppercase;
     position: absolute;
     right: 10%;
-    top: 10%;
+    top: 6.5rem;
     cursor: pointer;
 }
 .banner.bnr02 .imgGroup{
@@ -136,8 +139,8 @@ main h4{
 }
 .group{
     margin: auto;
-    width: 60%;
-    height: 50%;
+    width: 75%;
+    height: 15rem;
 }
 .group.g1{
     top: 0;
@@ -188,10 +191,14 @@ main h4{
     left: 0;
 }
 .group .image{
-    height: 8.75rem;
-    max-height: 350px;
+    height: 12rem;
+    max-height: 480px;
     width: 100%;
     top: 0;
+}
+.group p{
+    font-size: min(2em,20px);
+    line-height: min(0.8rem,32px);
 }
 /* 푸터 */
 .ftrWrap{

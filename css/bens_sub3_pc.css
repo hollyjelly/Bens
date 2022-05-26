@@ -423,7 +423,7 @@ h5 span{
 }
 .group p{
     font-size: min(1.2em,12px);
-    line-height: min(0.5.rem,20px);
+    line-height: min(0.5rem,20px);
     height: min(1.5rem,60px);
     overflow: hidden;
     color: #c5c5c5;
@@ -605,6 +605,7 @@ footer h5{
     bottom: 10px;
     left: 0;
     transition: width 0.5s;
+    z-index: -1;
 }
 .navLeft h2:nth-child(1):hover:after{
     width: 57%;

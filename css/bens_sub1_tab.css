@@ -216,6 +216,12 @@ header{
 .detail .right{
     top: min(-8rem,-320px);
 }
+.detail .bottom{
+    height: 4rem;
+    max-height: 160px;
+    bottom: min(-2rem,-80px);
+    right: 0;
+}
 .detail .bottom p{
     font-size: min(1.5em,15px);
     line-height: min(1.75rem,30px);
