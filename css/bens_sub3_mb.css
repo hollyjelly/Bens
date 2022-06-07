@@ -117,6 +117,14 @@ h5 span{
     left: auto;
     top: 3.5rem;
 }
+.banner.bnr02 .btn{
+    top: min(2rem,80px);
+    font-size: min(4em,40px);
+}
+.group p{
+    font-size: min(1.4em,14px);
+    line-height: min(0.5rem,20px);
+}
 /* 푸터 */
 .ftrWrap{
     margin-top: min(1rem,40px);

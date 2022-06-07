@@ -112,12 +112,12 @@ main{
     text-transform: uppercase;
     font-family: 'Kanit-Lightr';
     position: absolute;
-    top: min(1.9rem,-70px);
+    top: min(-1.3rem,-52px);
     right: 30px;
 }
 .right h2:nth-child(1){
     color: #fff;
-    top: min(1.95rem,-75px);
+    top: min(-1.4rem,-56px);
     right: 35px;
 }
 main p{

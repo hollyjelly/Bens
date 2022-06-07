@@ -236,7 +236,7 @@ body{
     margin-top: min(0.5rem,20px);
 }
 .content.cnt02 .artRight .top{
-    font-size: min(2.5em,25px);
+    font-size: min(2em,20px);
     height: 40px;
     overflow: hidden;
 }
@@ -244,8 +244,8 @@ body{
     display: none;
 }
 .content.cnt02 h4{
-    font-size: min(2.5em,25px);
-    margin-top: 0;
+    font-size: min(2em,20px);
+    top: 0;
 }
 /* 배너2 */
 .banner.bnr02{
@@ -261,7 +261,7 @@ body{
     max-height: 400px;
 }
 .banner.bnr02 div.play::after{
-    right: -1.8%;
+    right: 3.5%;
 }
 /* 배너3 */
 .bnrWrap{
