@@ -90,32 +90,56 @@ main h4{
     top: min(5rem,200px);
     left: 40%;
 }
+.banner.bnr02 .image.i1>span:nth-child(1)::after{
+    font-size: min(1.8em,18px);
+}
 .banner.bnr02 .image.i1>span:nth-child(2){
     top: min(5.75rem,230px);
     left: 34%;
+}
+.banner.bnr02 .image.i1>span:nth-child(2)::after{
+    font-size: min(1.8em,18px);
 }
 .banner.bnr02 .image.i1>span:nth-child(3){
     top: min(6.25rem,250px);
     left: 42%;
 }
+.banner.bnr02 .image.i1>span:nth-child(3)::after{
+    font-size: min(1.8em,18px);
+}
 .banner.bnr02 .image.i1>span:nth-child(4){
     top: min(5.5rem,220px);
     left: 48%;
 }
+.banner.bnr02 .image.i1>span:nth-child(4)::after{
+    font-size: min(1.8em,18px);
+}
 .banner.bnr02 .image.i1>span:nth-child(5){
     top: min(8.25rem,330px);
+}
+.banner.bnr02 .image.i1>span:nth-child(5)::after{
+    font-size: min(1.8em,18px);
 }
 .banner.bnr02 .image.i1>span:nth-child(6){
     top: min(9.5rem,380px);
     left: 29%;
 }
+.banner.bnr02 .image.i1>span:nth-child(6)::after{
+    font-size: min(1.8em,18px);
+}
 .banner.bnr02 .image.i1>span:nth-child(7){
     bottom: min(5rem,200px);
     right: 36%;
 }
+.banner.bnr02 .image.i1>span:nth-child(7)::after{
+    font-size: min(1.8em,18px);
+}
 .banner.bnr02 .image.i1>span:nth-child(8){
     left: 30%;
     bottom: min(0.7rem,28px);
+}
+.banner.bnr02 .image.i1>span:nth-child(8)::after{
+    font-size: min(1.8em,18px);
 }
 .banner.bnr02 .btn{
     display: block;
@@ -126,6 +150,7 @@ main h4{
     right: 10%;
     top: 6.5rem;
     cursor: pointer;
+    z-index: 3;
 }
 .banner.bnr02 .imgGroup{
     width: 100vw;

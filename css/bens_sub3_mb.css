@@ -74,6 +74,34 @@ h5 span{
 .banner.bnr02 .bottom{
     margin-top: min(0.5rem,20px);
 }
+.group.g1{
+    top: 6rem;
+}
+.group.g2{
+    top: 6rem;
+}
+.group.g3{
+    top: 6rem;
+}
+.group.g4{
+    top: 6rem;
+}
+.group.g5{
+    top: 6rem;
+}
+.group.g6{
+    top: 6rem;
+}
+.group.g7{
+    top: 6rem;
+}
+.group.g8{
+    top: 6rem;
+}
+.group .image{
+    height: 8rem;
+    max-height: 320px;
+}
 .banner.bnr02 .images .image.i1{
     background-image: none;
     width: 80%;
