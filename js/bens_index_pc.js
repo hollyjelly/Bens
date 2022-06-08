@@ -238,6 +238,6 @@ $(function(){
     $('.content.cnt01 li').click(indSlid);
     c1btn.click(c1sli);
 
-    
+    console.log('<나현지>의 3번째 포트폴리오 Bens 봐주셔서 감사합니다(´▽`ʃ♡ƪ)');
 
 });
