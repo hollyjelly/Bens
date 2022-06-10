@@ -126,7 +126,6 @@ $(function(){
             c1gr.find('.article:first').appendTo(c1gr);
             c1gr.css({marginLeft:'-100%'});
             var i = Number(c1gr.find('.article:eq(1)').attr('data-ind'));
-            console.log(i)
             c1li.removeClass('show');
             c1li.eq(i).addClass('show');
         });
@@ -138,7 +137,6 @@ $(function(){
             c1gr.find('.article:last').prependTo(c1gr);
             c1gr.css({marginLeft:'-100%'});
             var i = Number(c1gr.find('.article:eq(1)').attr('data-ind'));
-            console.log(i)
             c1li.removeClass('show');
             c1li.eq(i).addClass('show');
         });
@@ -170,7 +168,6 @@ $(function(){
             c1gr.find('.article:first').appendTo(c1gr);
             c1gr.css({marginLeft:'-100%'});
             var i = Number(c1gr.find('.article:eq(1)').attr('data-ind'));
-            console.log(i)
             c1li.removeClass('show');
             c1li.eq(i).addClass('show');
         });

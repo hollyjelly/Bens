@@ -237,6 +237,8 @@ body{
     display: flex;
     justify-content: space-between;
     width: 400%;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
 }
 .content.cnt01 .article{
     width: calc(100% / 4);
