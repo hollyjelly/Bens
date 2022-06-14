@@ -175,6 +175,9 @@ main p::after{
 /* 컨텐츠1 */
 .content.cnt01 article{
     position: relative;
+    opacity: 0;
+    transition: all 2.5s;
+    top: 1.5rem;
 }
 .content.cnt01 article:nth-child(2){
     height: 6.5rem;
@@ -296,6 +299,9 @@ main p::after{
 }
 .content.cnt02 article{
     position: relative;
+    top: 1.5rem;
+    opacity: 0;
+    transition: all 2s;
 }
 .content.cnt02 article:nth-child(2){
     margin-top: min(3.5rem,-140px);
@@ -400,6 +406,9 @@ main p::after{
 }
 .topSlide article{
     position: relative;
+    top: 1.5rem;
+    opacity: 0;
+    transition: all 2s;
 }
 .topSlide .imgGroup{
     width: 500%;
@@ -462,6 +471,9 @@ main p::after{
 }
 .btmSlide article{
     position: relative;
+    opacity: 0;
+    top: 1.5rem;
+    transition: all 2s;
 }
 .btmSlide .images{
     width: calc(100% / 12 * 4);

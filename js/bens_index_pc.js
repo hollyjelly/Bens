@@ -7,14 +7,26 @@ $(function(){
     var c1li = $('.content.cnt01 li');
     var b1btn = $('.bnrWrap li');
     var b1bgc = $('.bnrWrap').eq(0);
+    var bannermouse = $('.banner.bnr01');
     var b1btx = $('.banner.bnr01 h2');
-    var b1tg = $('.banner.bnr01 .dsg');   
     var bni1 =$('.banner.bnr01 .image').eq(0);
     var bni2 =$('.banner.bnr01 .image').eq(1);
     var bni3 =$('.banner.bnr01 .image').eq(2);
+    var contentmouse = $('.cntWrap').eq(1);
+    var contentimage1 = $('.content.cnt02 .artRight article').eq(0);
+    var contentimage2 = $('.content.cnt02 .artRight article').eq(1);
+    var contentimage3 = $('.content.cnt02 .artLeft article').eq(0);
+    var contentimage4 = $('.content.cnt02 .artLeft article').eq(1);
+    var bannerse = $('.bnrWrap').eq(2);
+    var bannerimage1 = $('.group .image');
+    var bannerimage2 = $('.banner.bnr03 .image.i1');
+    var bannerimage3 = $('.banner.bnr03 .image.i2');
+    var bannerimage4 = $('.banner.bnr03 .image.i3');
     var fixbtn = $('.topbtn');
     var wd = $(window).width();
     var bn1 = 0, bn2 = 0;
+
+
 
     if(wd>1024){
 
@@ -224,6 +236,47 @@ $(function(){
         },1000)
     });
 
+
+
+    // 마우스
+
+    function mousebanner1(){
+        bannermouse.css('opacity','1');
+        bni1.addClass('i'+bn1);
+        bni2.addClass('i'+bn2);
+        bni3.addClass('i3');
+        b1btx.eq(0).addClass('op');
+        b1btx.eq(1).addClass('op2');
+    }
+
+    function mousecontent1(){
+        contentimage1.css('opacity','1');
+        setTimeout(function(){
+            contentimage2.css('opacity','1');
+        },1500);
+        setTimeout(function(){
+            contentimage3.css('opacity','1');
+        },1000);
+        setTimeout(function(){
+            contentimage4.css('opacity','1');
+        },500);
+    }
+
+    bannerse.mouseenter(function(){
+        bannerimage1.css('opacity','1');
+        setTimeout(function(){
+            bannerimage1.css('opacity','1');
+        },500);
+        setTimeout(function(){
+            bannerimage2.css('opacity','1');
+        },1000);
+        setTimeout(function(){
+            bannerimage3.css('opacity','1');
+        },1500);
+        setTimeout(function(){
+            bannerimage4.css('opacity','1');
+        },2000);
+    });
     
     // 값
     c1li.click(indsli);
@@ -234,6 +287,8 @@ $(function(){
     b1btn.eq(1).click(b1con);
     $('.content.cnt01 li').click(indSlid);
     c1btn.click(c1sli);
+    b1bgc.mouseenter(mousebanner1)
+    contentmouse.mouseenter(mousecontent1);
 
     console.log('<나현지>의 3번째 포트폴리오 Bens 봐주셔서 감사합니다(´▽`ʃ♡ƪ)');
 

@@ -413,6 +413,8 @@ body{
     position: relative; 
     height: 32rem; 
     max-height: 1280px; 
+    transition: all 1.8s;
+    opacity: 0;
 }
 .bnrWrap .tab{
     position: absolute;
@@ -640,6 +642,8 @@ body{
 }
 .content.cnt02 .artLeft article{
     position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
 }
 .content.cnt02 .artLeft article:nth-child(1){
     width: calc(100% / 6 * 5);
@@ -705,6 +709,8 @@ body{
 }
 .content.cnt02 .artRight article{
     position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
 }
 .content.cnt02 .artRight article:nth-child(1){
     width: calc(100% / 6 * 5.3);
@@ -991,6 +997,8 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 2s;
+    opacity: 0;
 }
 .banner.bnr03 .image.i1{
     width: 90%;
@@ -1004,6 +1012,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     color: transparent;
+    opacity: 0;
+    transition: all 2s;
 }
 .banner.bnr03 .image.i2 span{
     opacity: 0;
@@ -1023,6 +1033,8 @@ body{
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    opacity: 0;
+    transition: all 2s;
 }
 @keyframes round{
 
@@ -1046,6 +1058,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     color: transparent;
+    opacity: 0;
+    transition: all 2s;
 }
 /* 푸터 */
 .ftrWrap{
