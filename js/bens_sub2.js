@@ -12,23 +12,7 @@ $(function(){
     var content3mouse = $('.cntWrap').eq(2);
     var con3article = $('.topSlide article').eq(0);
     var con3article2 = $('.btmSlide article');
-
-    content3mouse.mouseenter(function(){
-        con3article.css({opacity:'1',top:'0'});
-        setTimeout(function(){
-            con3article2.css({opacity:'1',top:'0'});
-        },1000);
-    });
-    
-    content2mouse.mouseenter(function(){
-        con2article.css({opacity:'1',top:'0'});
-        setTimeout(function(){
-            con2article2.css({opacity:'1',top:'0'});
-        },1000);
-        setTimeout(function(){
-            con2article3.css({opacity:'1',top:'0'});
-        },1700);
-    });
+    var windowwidth = $(window).width();
     
     // 슬라이드
     var btn = $('.content.cnt03 .btn');
@@ -76,13 +60,34 @@ $(function(){
     }
 
     // 마우스
+    if(windowwidth>1024){
+        function mousecontent1(){
+            con1article.css({opacity:'1',top:'0'});
+            setTimeout(function(){
+                con1article2.css({opacity:'1',top:'0'});
+            },800);
+        }
+        function mousecontent2(){
+            con2article.css({opacity:'1',top:'0'});
+            setTimeout(function(){
+                con2article2.css({opacity:'1',top:'0'});
+            },1000);
+            setTimeout(function(){
+                con2article3.css({opacity:'1',top:'0'});
+            },1700);
+        }
+        function mousecontent3(){
+            con3article.css({opacity:'1',top:'0'});
+            setTimeout(function(){
+                con3article2.css({opacity:'1',top:'0'});
+            },1000);
+        }
+        content1mouse.mouseenter(mousecontent1);
+        content2mouse.mouseenter(mousecontent2);
+        content3mouse.mouseenter(mousecontent3);
+    }
 
-    content1mouse.mouseenter(function(){
-        con1article.css({opacity:'1',top:'0'});
-        setTimeout(function(){
-            con1article2.css({opacity:'1',top:'0'});
-        },800);
-    });
+
 
     fixbtn.click(scroll)
     bar.last().click(mnuB);    

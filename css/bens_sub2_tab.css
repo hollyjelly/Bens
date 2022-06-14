@@ -60,6 +60,10 @@ main p{
     left: 2%;
 }
 /* 컨텐츠1 */
+.content.cnt01 article{
+    top: 0;
+    opacity: 1;
+}
 .content.cnt01 .image{
     z-index: 0;
 }
@@ -92,6 +96,10 @@ main p{
 /* 컨텐츠2 */
 .content.cnt02 section{
     margin-top: min(1.5rem,60px);
+}
+.content.cnt02 article{
+    opacity: 1;
+    top: 0;
 }
 .content.cnt02 article .image.i1{
     width: 50%;
@@ -140,6 +148,14 @@ main p{
     max-height: 100px;
     bottom: min(0.5rem,20px);
     right: -40%;
+}
+.topSlide article{
+    opacity: 1;
+    top: 0;
+}
+.btmSlide article{
+    opacity: 1;
+    top: 0;
 }
 .content.cnt03 .topSlide .images{
     width: 60%;

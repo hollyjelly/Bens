@@ -111,6 +111,7 @@ body{
 .banner.bnr01{
     height: 26rem;
     max-height: 1040px;
+    opacity: 1;
 }
 .bnrWrap .tab{
     width: 28%;
@@ -120,6 +121,7 @@ body{
 .bnrWrap li{
     font-size: min(2.5em,25px);
 }
+
 .banner.bnr01 .image:nth-child(1){
     width: calc(100% / 8 * 3.5);
     height: 9rem;
@@ -188,6 +190,9 @@ body{
     height: 20rem;
     max-height: 800px; 
 }
+.content.cnt02 .artLeft article{
+    opacity: 1;
+}
 .content.cnt02 .artLeft article:nth-child(1){
     top: min(1.5rem,60px);
     width: 90%;
@@ -207,6 +212,9 @@ body{
 .content.cnt02 .artRight{
     height: 20rem;
     max-height: 800px;
+}
+.content.cnt02 .artRight article{
+    opacity: 1;
 }
 .content.cnt02 .artRight article:nth-child(1){
     top: 0;
@@ -270,6 +278,7 @@ body{
 .group .image{
     width: calc(100% / 8 * 4);
     height: 9rem;
+    opacity: 1;
 }
 .banner.bnr03 .texts{
     margin-top: min(1rem,40px);
@@ -298,11 +307,14 @@ body{
     width: 90%;
     height: 11rem;
     max-height: 440px;
+    opacity: 1;
 }
 .banner.bnr03 .image.i2{
+    opacity: 1;
     bottom: 7rem;
 }
 .banner.bnr03 .image.i3{
+    opacity: 1;
     margin-top: min(0.5rem,20px);
     height: 8.5rem;
     width: calc(100% / 8 * 3.5);
